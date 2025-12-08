@@ -1,0 +1,129 @@
+.cert-card {
+    /* Specific override if needed */
+}
+
+.timeline {
+    position: relative;
+    margin: 32px 0 48px;
+    padding: 0 16px;
+}
+
+.timeline-track {
+    position: absolute;
+    top: 6px;
+    /* center of node (12px node / 2) */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--color-border);
+    z-index: 1;
+}
+
+.timeline-nodes {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    /* fixed width for centering text */
+}
+
+.node-circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--color-surface-alt);
+    border: 2px solid var(--color-border);
+    margin-bottom: 8px;
+}
+
+.node-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.2;
+}
+
+.node-sub {
+    font-size: var(--font-size-xs);
+    color: #999;
+}
+
+/* States */
+.node--completed .node-circle,
+.node--current .node-circle {
+    border-color: var(--color-accent);
+}
+
+.node--current .node-circle {
+    background-color: var(--color-accent);
+}
+
+/* To simulate the "Enrolled - Theory" line segment being filled, complex CSS or SVG is needed.
+   For MVP/simplicity, we leave the line gray or use a gradient track.
+   Custom ASCII showed "Enrolled --- Theory" (filled line).
+   Ideally we'd calculate % width of a filled track div.
+   Hardcoding a partial fill for this specific state.
+*/
+.timeline-track::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    /* Approx to first node */
+    height: 100%;
+    background-color: var(--color-accent);
+    z-index: 2;
+}
+
+.cert-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.cert-stat-box {
+    background-color: var(--color-surface);
+    padding: 16px;
+    border-radius: var(--radius-sm);
+}
+
+.stat-box-title {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+}
+
+.stat-box-value {
+    font-size: var(--font-size-lg);
+    /* Larger per spec "THEORY" label */
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 4px;
+}
+
+/* Specific styling for 'THEORY' text in value */
+.cert-stat-box:first-child .stat-box-value {
+    color: var(--color-accent);
+    text-transform: uppercase;
+}
+
+.stat-box-desc,
+.stat-box-percent {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.stat-box-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}

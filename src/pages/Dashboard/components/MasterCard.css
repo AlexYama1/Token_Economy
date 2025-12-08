@@ -1,0 +1,67 @@
+.master-card {
+    height: 100%;
+}
+
+.master-info {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.master-name {
+    font-weight: 600;
+    font-size: var(--font-size-lg);
+    color: var(--color-text-primary);
+}
+
+.master-role {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    margin-top: 4px;
+}
+
+.master-rating {
+    font-size: var(--font-size-sm);
+    color: var(--color-warning);
+    /* Star color */
+    margin-top: 4px;
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+.master-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding: 16px 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.stat-value {
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    margin-top: 4px;
+}
+
+.master-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.action-btn {
+    flex: 1;
+}

@@ -1,0 +1,114 @@
+.nft-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.nft-card-visual {
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2C3E7A 100%);
+    border-radius: var(--radius-lg);
+    color: #fff;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 24px;
+    position: relative;
+    border: 4px solid #D4AF37;
+    /* Gold border effect from ASCII 'double line' idea */
+}
+
+.nft-content {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nft-title {
+    font-size: var(--font-size-2xl);
+    font-family: serif;
+    letter-spacing: 0.1em;
+}
+
+.nft-subtitle {
+    font-size: var(--font-size-lg);
+    opacity: 0.9;
+}
+
+.nft-seal {
+    font-size: 24px;
+    color: #D4AF37;
+}
+
+.nft-details {
+    font-family: monospace;
+    font-size: var(--font-size-xs);
+    text-align: left;
+    opacity: 0.7;
+}
+
+.nft-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.license-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.status-badge-green {
+    color: var(--color-success);
+    background-color: #E8F5E9;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: var(--font-size-sm);
+}
+
+.license-stats {
+    margin-bottom: 24px;
+}
+
+.ls-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.ls-val {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+.license-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.career-title {
+    font-size: var(--font-size-lg);
+    margin-bottom: 8px;
+}
+
+.career-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    min-height: 48px;
+}

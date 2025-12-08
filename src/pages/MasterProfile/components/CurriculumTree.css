@@ -1,0 +1,65 @@
+.curriculum-tree {
+    margin-bottom: 32px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 8px;
+}
+
+.section-title {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    letter-spacing: 0.05em;
+}
+
+.section-meta {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.phase-node {
+    margin-bottom: 24px;
+}
+
+.phase-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.phase-title {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.phase-duration {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.modules-list {
+    font-family: monospace;
+    /* Preserves the ASCII tree alignment look better */
+    font-size: var(--font-size-base);
+    color: var(--color-text-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.module-verifier {
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-left: 24px;
+    /* Indent */
+    margin-top: 4px;
+    font-style: italic;
+}

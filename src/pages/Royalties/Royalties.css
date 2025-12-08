@@ -1,0 +1,226 @@
+.royalties-page {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.page-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 24px;
+}
+
+.ro-stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.ro-stat {
+    padding: 24px;
+}
+
+.ros-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+}
+
+.ros-val {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.ros-sub.success {
+    color: var(--color-success);
+    font-size: var(--font-size-sm);
+}
+
+.rcc-title {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: 24px;
+}
+
+.rcc-chart-box {
+    height: 240px;
+}
+
+/* Simple CSS Bar Chart */
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 24px;
+    /* Space for labels */
+}
+
+.bar-col {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.bar {
+    width: 60%;
+    background-color: var(--color-accent);
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    margin-bottom: 8px;
+}
+
+.bar-lbl {
+    position: absolute;
+    bottom: -24px;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+}
+
+.ls-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ls-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+.ls-desc {
+    color: var(--color-text-secondary);
+    margin-bottom: 24px;
+}
+
+.tree-card {
+    padding: 32px;
+    font-family: var(--font-family-mono);
+}
+
+.tree-node {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.node-icon {
+    background-color: var(--color-surface);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    margin-right: 12px;
+    font-weight: 700;
+}
+
+.node-icon.root {
+    background-color: var(--color-text-primary);
+    color: #FFF;
+}
+
+.node-name {
+    font-weight: 600;
+}
+
+.branch-line {
+    color: var(--color-border);
+    margin-right: 8px;
+}
+
+.node-content {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.nc-meta {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    margin-left: 8px;
+}
+
+.nc-royalty {
+    color: var(--color-success);
+    font-size: var(--font-size-sm);
+}
+
+.tree-leaf-group {
+    margin-left: 0;
+    margin-bottom: 16px;
+}
+
+.tree-leaf {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: var(--font-size-sm);
+}
+
+.leaf-line {
+    color: var(--color-border);
+    margin-right: 8px;
+    white-space: pre;
+}
+
+.leaf-royalty {
+    margin-left: auto;
+    color: var(--color-text-secondary);
+}
+
+.rl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.rl-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+.rl-table-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.rl-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rl-table th {
+    background-color: var(--color-surface);
+    text-align: left;
+    padding: 16px 24px;
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+}
+
+.rl-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--color-surface);
+    font-size: var(--font-size-sm);
+}
+
+.rl-table tr:last-child td {
+    border-bottom: none;
+}
+
+.text-success {
+    color: var(--color-success);
+    font-family: var(--font-family-mono);
+    font-weight: 600;
+}
+
+.badge-success {
+    color: var(--color-success);
+    font-weight: 600;
+}

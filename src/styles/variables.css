@@ -1,0 +1,54 @@
+:root {
+  /* Colors */
+  --color-primary: #2C3E7A;
+  --color-accent: #E86A4D;
+  --color-surface: #F9F7F4;
+  --color-surface-alt: #FFFFFF;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #666666;
+  --color-success: #2E7D32;
+  --color-warning: #F57C00;
+  --color-danger: #C62828;
+  --color-danger-light: #FFEBEE;
+
+  --color-success-light: #E8F5E9;
+
+  --color-chart-up: #2E7D32;
+  --color-chart-down: #C62828;
+  --color-chart-line: #2C3E7A;
+  --color-chart-area: rgba(44, 62, 122, 0.1);
+  --color-border: #E0E0E0;
+
+  /* Typography */
+  --font-family-base: 'Inter', 'Noto Sans JP', sans-serif;
+  --font-family-mono: 'IBM Plex Mono', monospace;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+
+  /* Spacing */
+  --spacing-unit: 8px;
+  --spacing-xs: 4px;
+  /* 0.5 unit */
+  --spacing-sm: 8px;
+  /* 1 unit */
+  --spacing-md: 16px;
+  /* 2 units */
+  --spacing-lg: 24px;
+  /* 3 units */
+  --spacing-xl: 32px;
+  /* 4 units */
+  --spacing-2xl: 48px;
+  /* 6 units */
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+}

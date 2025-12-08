@@ -1,0 +1,58 @@
+.mb-8 {
+    margin-bottom: 32px;
+}
+
+.section-title {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+}
+
+.milestones-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.milestone-card {
+    border-left: 4px solid transparent;
+}
+
+.milestone-card--done {
+    border-left-color: var(--color-success);
+}
+
+.milestone-card--pending {
+    border-left-color: var(--color-border);
+}
+
+.ms-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: var(--font-size-base);
+}
+
+.ms-date,
+.ms-token,
+.ms-status {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: 4px;
+}
+
+.ms-reqs {
+    margin-top: 16px;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.next-step-desc {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}

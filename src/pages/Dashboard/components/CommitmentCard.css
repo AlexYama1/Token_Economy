@@ -1,0 +1,43 @@
+.commitment-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.stat-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Reusing stat classes if global, but for safety defining here or relying on similar structure */
+.stat-col .stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.stat-col .stat-value {
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    margin-top: 4px;
+}
+
+.commitment-info {
+    background-color: var(--color-surface);
+    padding: 16px;
+    border-radius: var(--radius-sm);
+}
+
+.info-title {
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.info-list {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

@@ -1,0 +1,101 @@
+.module-list {
+    width: 320px;
+    background-color: var(--color-surface-alt);
+    border-right: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 64px);
+    /* Adjust based on main layout padding/header */
+    /* If main content has padding, this might need to sit flush. 
+     For now, we place it in a flex container in MyCurriculum page. */
+    height: 100%;
+}
+
+.module-list-header {
+    padding: 24px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.curr-title {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+}
+
+.curr-subtitle {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.phase-group {
+    padding: 24px;
+}
+
+.phase-label {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin-bottom: 12px;
+}
+
+.module-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+}
+
+.module-item--completed {
+    color: var(--color-text-secondary);
+    /* muted */
+}
+
+.check-icon {
+    color: var(--color-success);
+}
+
+.module-item--active {
+    color: var(--color-accent);
+    font-weight: 600;
+    position: relative;
+}
+
+.active-dot {
+    color: var(--color-accent);
+}
+
+.active-arrow {
+    margin-left: auto;
+}
+
+.module-item--locked {
+    color: #999;
+}
+
+.curr-footer {
+    margin-top: auto;
+    padding: 24px;
+    border-top: 1px solid var(--color-border);
+}
+
+.progress-label {
+    font-size: var(--font-size-sm);
+    margin-bottom: 8px;
+}
+
+.mini-progress-track {
+    height: 4px;
+    background-color: var(--color-border);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.mini-progress-fill {
+    height: 100%;
+    background-color: var(--color-accent);
+}

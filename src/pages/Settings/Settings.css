@@ -1,0 +1,135 @@
+.settings-page {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 800px;
+}
+
+.set-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 24px;
+}
+
+.set-sec-title {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.set-card {
+    padding: 32px;
+}
+
+.profile-edit-row {
+    display: flex;
+    gap: 48px;
+}
+
+.pe-avatar-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.pe-form-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+}
+
+.inp-text,
+.inp-area {
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    background-color: var(--color-surface);
+}
+
+.inp-area {
+    height: 80px;
+    resize: none;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.wallet-row {
+    margin-bottom: 24px;
+}
+
+.wr-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    margin-bottom: 4px;
+}
+
+.wr-val {
+    font-weight: 600;
+}
+
+.wr-val.mono {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-sm);
+}
+
+.wallet-actions {
+    margin-top: 32px;
+}
+
+.notif-card {
+    padding: 0;
+}
+
+.notif-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.notif-row:last-child {
+    border-bottom: none;
+}
+
+.toggle-switch {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: var(--font-size-xs);
+    cursor: pointer;
+    width: 60px;
+}
+
+.toggle-switch.on {
+    background-color: var(--color-success);
+    color: #FFF;
+}
+
+.toggle-switch.off {
+    background-color: var(--color-border);
+    color: var(--color-text-secondary);
+}

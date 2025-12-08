@@ -1,0 +1,81 @@
+.app-sidebar {
+    /* padding handle by card */
+}
+
+/* Simulate sticky if container allows */
+.sticky-sidebar {
+    position: sticky;
+    top: 24px;
+}
+
+.app-status {
+    margin-bottom: 24px;
+}
+
+.status-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: 4px;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot--green {
+    background-color: var(--color-success);
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--color-border);
+    margin: 24px 0;
+}
+
+.req-title,
+.stats-header {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+}
+
+.req-list {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: 4px;
+}
+
+.stat-bold {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.app-note {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    text-align: center;
+    margin-top: 8px;
+}

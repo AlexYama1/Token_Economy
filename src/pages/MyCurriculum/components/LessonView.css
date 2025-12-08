@@ -1,0 +1,124 @@
+.lesson-view {
+    flex: 1;
+    padding: 0 48px;
+    /* Extra padding for readability */
+    max-width: 900px;
+}
+
+.lesson-header {
+    margin-bottom: 48px;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 24px;
+}
+
+.lh-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 16px;
+}
+
+.lh-title {
+    font-size: var(--font-size-xl);
+    margin: 0;
+}
+
+.lh-progress-text {
+    color: var(--color-text-secondary);
+}
+
+.lh-dots {
+    display: flex;
+    gap: 16px;
+    /* Spacing between dots */
+    font-family: monospace;
+}
+
+.dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xs);
+}
+
+.dot--done {
+    background-color: var(--color-accent);
+    color: #FFF;
+}
+
+.dot--current {
+    background-color: transparent;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.dot--pending {
+    border: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+}
+
+.lesson-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 24px;
+}
+
+.video-player-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #1A1A1A;
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    margin-bottom: 32px;
+}
+
+.play-icon {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.lesson-text {
+    font-size: var(--font-size-base);
+    line-height: 1.8;
+    color: var(--color-text-primary);
+    margin-bottom: 24px;
+}
+
+.lesson-divider {
+    height: 1px;
+    background-color: var(--color-border);
+    margin: 32px 0;
+}
+
+.res-title {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: 16px;
+}
+
+.res-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    color: var(--color-accent);
+    cursor: pointer;
+}
+
+.res-item:hover {
+    text-decoration: underline;
+}
+
+.lesson-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    margin-bottom: 64px;
+}

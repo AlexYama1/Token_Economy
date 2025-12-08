@@ -1,0 +1,35 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.badge__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Status variants */
+.badge--success .badge__dot {
+    background-color: var(--color-success);
+}
+
+.badge--warning .badge__dot {
+    background-color: var(--color-warning);
+}
+
+.badge--inactive .badge__dot {
+    background-color: #E0E0E0;
+    /* or specific gray */
+}
+
+/* Text color overrides if needed, though usually secondary */
+.badge--success {
+    color: var(--color-text-primary);
+    /* or keep secondary depending on design */
+}

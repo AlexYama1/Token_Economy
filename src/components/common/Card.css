@@ -1,0 +1,30 @@
+.card {
+    background-color: var(--color-surface-alt);
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.card__title {
+    font-size: var(--font-size-base);
+    /* Or lg depending on context, keeping flexible */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+    /* Usually section headers are secondary in user req */
+    margin: 0;
+}
+
+.card__content {
+    flex: 1;
+}

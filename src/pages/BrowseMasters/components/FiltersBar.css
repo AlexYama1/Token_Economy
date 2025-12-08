@@ -1,0 +1,32 @@
+.filters-bar {
+    margin-bottom: 32px;
+}
+
+.page-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 24px;
+}
+
+.filters-controls {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    min-width: 160px;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface-alt);
+    font-family: inherit;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    cursor: pointer;
+}
+
+.results-count {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}

@@ -1,0 +1,27 @@
+.master-profile-container {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.profile-left-col {
+    flex: 6.5;
+    /* Approx 65% */
+}
+
+.profile-right-col {
+    flex: 3.5;
+    /* Approx 35% */
+}
+
+@media (max-width: 1024px) {
+    .master-profile-container {
+        flex-direction: column;
+    }
+
+    .profile-left-col,
+    .profile-right-col {
+        flex: 1;
+        width: 100%;
+    }
+}

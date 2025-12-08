@@ -1,0 +1,25 @@
+.curriculum-container {
+    display: flex;
+    height: calc(100vh - 64px);
+    /* Assuming full height minus header if any, though sidebar is fixed */
+    margin-left: -32px;
+    /* Negate main layout padding to touch edges? 
+                        Actually sidebar design usually implies it sits on the edge.
+                        MainLayout adds 32px padding. 
+                        To make ModuleList flush left, we might need adjustments.
+                        For now, let's just let it sit inside the container. */
+    margin-top: -32px;
+    /* Pull up to top */
+    margin-bottom: -32px;
+    /* Pull down */
+}
+
+.curr-sidebar {
+    flex-shrink: 0;
+}
+
+.curr-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 32px 0;
+}

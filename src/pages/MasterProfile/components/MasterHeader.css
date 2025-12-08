@@ -1,0 +1,40 @@
+.profile-header {
+    margin-bottom: 32px;
+}
+
+.profile-hero {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.profile-name {
+    font-size: var(--font-size-xl);
+    margin-bottom: 4px;
+}
+
+.profile-role {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-primary);
+    margin-bottom: 4px;
+}
+
+.profile-loc {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+    margin-bottom: 8px;
+}
+
+.profile-meta {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.profile-quote {
+    font-style: italic;
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    border-left: 4px solid var(--color-accent);
+    padding-left: 16px;
+}

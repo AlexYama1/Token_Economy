@@ -1,0 +1,80 @@
+.browse-master-card {
+    text-align: center;
+    height: 100%;
+}
+
+.browse-card-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.browse-avatar {
+    /* Specific override if needed for 120px, size='xl' handles it */
+}
+
+.browse-name {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+.browse-specialty,
+.browse-location {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-top: 4px;
+}
+
+.browse-rating {
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: var(--font-size-base);
+}
+
+.star {
+    color: var(--color-warning);
+}
+
+.browse-stats {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.accepting-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-dot--on {
+    background-color: var(--color-success);
+}
+
+.status-dot--off {
+    background-color: #E0E0E0;
+    /* or red/gray */
+    border: 1px solid var(--color-border);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.browse-card-footer {
+    margin-top: auto;
+    /* Push to bottom if flex column */
+}
