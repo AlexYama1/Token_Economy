@@ -18,7 +18,7 @@ import Settings from './pages/Settings/Settings';
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<Navigate to="/dashboard" replace />} />
