@@ -41,6 +41,11 @@ const MasterSidebar = () => {
                     <button className="copy-btn">[⧉]</button>
                 </div>
                 <button className="disconnect-btn">[Disconnect Wallet]</button>
+                <div style={{ marginTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1rem', textAlign: 'center' }}>
+                    <NavLink to="/dashboard" style={{ color: '#888', textDecoration: 'none', fontSize: '0.8rem' }}>
+                        ← Switch to Apprentice
+                    </NavLink>
+                </div>
             </div>
         </aside>
     );

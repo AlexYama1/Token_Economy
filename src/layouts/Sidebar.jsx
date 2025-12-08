@@ -41,6 +41,11 @@ const Sidebar = () => {
                     <div className="wallet-address">[Wallet: 0x1a2b...3c4d]</div>
                     <button className="disconnect-btn">[Disconnect]</button>
                 </div>
+                <div style={{ marginTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1rem' }}>
+                    <NavLink to="/master/dashboard" style={{ color: '#888', textDecoration: 'none', fontSize: '0.8rem' }}>
+                        → Switch to Master View
+                    </NavLink>
+                </div>
             </div>
         </aside>
     );
