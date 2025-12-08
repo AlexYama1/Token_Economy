@@ -1,7 +1,18 @@
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
-// ... imports ...
+import Dashboard from './pages/Dashboard/Dashboard';
+import BrowseMasters from './pages/BrowseMasters/BrowseMasters';
+import MasterProfile from './pages/MasterProfile/MasterProfile';
+import MyCurriculum from './pages/MyCurriculum/MyCurriculum';
+import Certification from './pages/Certification/Certification';
+import MasterLayout from './layouts/MasterLayout';
+import MasterDashboard from './pages/MasterDashboard/MasterDashboard';
+import MyStudents from './pages/MyStudents/MyStudents';
+import Royalties from './pages/Royalties/Royalties';
+import Treasury from './pages/Treasury/Treasury';
+import WalletDetail from './pages/WalletDetail/WalletDetail';
+import Settings from './pages/Settings/Settings';
 
 function App() {
     return (
