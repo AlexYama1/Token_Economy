@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Login from './pages/Login/Login';
 import MainLayout from './layouts/MainLayout';
 import Dashboard from './pages/Dashboard/Dashboard';
 import BrowseMasters from './pages/BrowseMasters/BrowseMasters';
@@ -18,8 +19,12 @@ function App() {
     return (
         <HashRouter>
             <Routes>
-                <Route path="/" element={<MainLayout />}>
-                    <Route index element={<Navigate to="/dashboard" replace />} />
+                {/* Login Page - Default Landing */}
+                <Route path="/" element={<Login />} />
+                <Route path="/login" element={<Login />} />
+
+                {/* Apprentice/Student Routes */}
+                <Route element={<MainLayout />}>
                     <Route path="dashboard" element={<Dashboard />} />
                     <Route path="masters" element={<BrowseMasters />} />
                     <Route path="masters/:id" element={<MasterProfile />} />
