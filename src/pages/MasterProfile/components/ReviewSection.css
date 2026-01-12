@@ -1,0 +1,122 @@
+.review-section {
+    margin-bottom: 2rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.review-summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stars {
+    color: #f59e0b;
+}
+
+.avg-rating {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.review-count {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.review-card {
+    padding: 1.25rem;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.review-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-author-info {
+    flex: 1;
+}
+
+.review-author {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.review-meta {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+
+.review-rating {
+    color: #f59e0b;
+    font-size: 1rem;
+}
+
+.review-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0 0 0.5rem;
+}
+
+.review-text {
+    font-style: italic;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0 0 1rem;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.helpful-btn {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.helpful-btn:hover {
+    background: var(--color-surface);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.load-more-btn {
+    width: 100%;
+}
