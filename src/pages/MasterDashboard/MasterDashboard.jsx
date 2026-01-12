@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from '../../components/common/Card';
 import Button from '../../components/common/Button';
+import LiquidationModal from './components/LiquidationModal';
 import './MasterDashboard.css';
 
 const MasterDashboard = () => {
+    const [showLiquidationModal, setShowLiquidationModal] = useState(false);
+
     return (
         <div className="master-dashboard">
             {/* Section A: Welcome Header */}
@@ -43,6 +46,12 @@ const MasterDashboard = () => {
                         <button className="toggle-btn active">1Y</button>
                         <button className="toggle-btn">ALL</button>
                     </div>
+                    <button
+                        className="liquidate-btn"
+                        onClick={() => setShowLiquidationModal(true)}
+                    >
+                        💰 Liquidate Tokens
+                    </button>
                 </div>
             </Card>
 
@@ -89,7 +98,6 @@ const MasterDashboard = () => {
                             <div className="act-time">2 hours ago</div>
                         </div>
                     </div>
-                    {/* More rows... */}
                     <div className="act-row">
                         <div className="act-icon icon-accent">◆</div>
                         <div className="act-details">
@@ -104,6 +112,15 @@ const MasterDashboard = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Liquidation Modal */}
+            {showLiquidationModal && (
+                <LiquidationModal
+                    onClose={() => setShowLiquidationModal(false)}
+                    tokenAmount={47}
+                    tokenValue={4582400}
+                />
+            )}
         </div>
     );
 };

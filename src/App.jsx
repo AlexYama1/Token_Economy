@@ -10,6 +10,7 @@ import Certification from './pages/Certification/Certification';
 import MasterLayout from './layouts/MasterLayout';
 import MasterDashboard from './pages/MasterDashboard/MasterDashboard';
 import MyStudents from './pages/MyStudents/MyStudents';
+import MasterCurriculum from './pages/MasterCurriculum/MasterCurriculum';
 import Royalties from './pages/Royalties/Royalties';
 import Treasury from './pages/Treasury/Treasury';
 import WalletDetail from './pages/WalletDetail/WalletDetail';
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/master/dashboard" element={<MasterDashboard />} />
                     <Route path="/master/wallet" element={<WalletDetail />} />
                     <Route path="/master/students" element={<MyStudents />} />
+                    <Route path="/master/curriculum" element={<MasterCurriculum />} />
                     <Route path="/master/royalties" element={<Royalties />} />
                     <Route path="/master/settings" element={<Settings />} />
                     <Route path="/treasury" element={<Treasury />} />
@@ -47,3 +49,4 @@ function App() {
 }
 
 export default App;
+

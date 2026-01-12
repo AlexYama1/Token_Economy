@@ -75,6 +75,32 @@
     gap: 8px;
 }
 
+.ph-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liquidate-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.liquidate-btn:hover {
+    background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+    transform: translateY(-1px);
+}
+
 .toggle-btn {
     border: none;
     background: none;
